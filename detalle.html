@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detalle - Alianza por la Soberanía (APLS)</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- HEADER COMPARTIDO CON LOGO -->
+        <header id="site-header">
+            <div class="container">
+                <nav class="nav">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <img
+                                src="img/WhatsApp Image 2025-12-03 at 9.24.15 PM.jpeg"
+                                alt="Logo de la Alianza por la Soberanía"
+                                class="logo-img"
+                            />
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">APLS</span>
+                            <span class="logo-subtitle">Alianza por la Soberanía</span>
+                        </div>
+                    </a>
+
+                    <div class="nav-right" id="nav-right">
+                        <ul class="nav-links">
+                            <li><a href="index.html#centro">El centro</a></li>
+                            <li><a href="index.html#programas">Programas</a></li>
+                            <li><a href="index.html#historias">Historias reales</a></li>
+                            <li><a href="index.html#equipo">Equipo</a></li>
+                            <li><a href="index.html#fundacion">La Fundación</a></li>
+                            <li><a href="index.html#apoyanos">Apóyanos</a></li>
+                        </ul>
+
+                        <div class="nav-actions">
+                            <form id="search-form" class="search-form">
+                                <input
+                                    type="text"
+                                    placeholder="Buscar en el sitio..."
+                                    aria-label="Buscar en el sitio"
+                                />
+                            </form>
+
+                            <button
+                                id="search-toggle"
+                                class="icon-button"
+                                type="button"
+                                aria-label="Abrir buscador"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="11" cy="11" r="6"></circle>
+                                    <line x1="16" y1="16" x2="21" y2="21"></line>
+                                </svg>
+                            </button>
+
+                            <a href="detalle.html?seccion=contacto" class="btn btn-light">
+                                Contacto
+                            </a>
+                        </div>
+                    </div>
+
+                    <button
+                        id="nav-toggle"
+                        class="nav-toggle"
+                        type="button"
+                        aria-label="Abrir menú"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- HERO DEL DETALLE (DINÁMICO CON JS) -->
+            <section class="detail-hero">
+                <div class="container">
+                    <div class="detail-breadcrumb">
+                        <a href="index.html">Inicio</a> ·
+                        <span id="detail-category">Sección</span>
+                    </div>
+                    <h1 id="detail-title" class="detail-title">Título de la sección</h1>
+                    <p id="detail-intro" class="detail-intro">
+                        Introducción de la sección seleccionada.
+                    </p>
+                </div>
+            </section>
+
+            <!-- CONTENIDO DINÁMICO -->
+            <section class="content-section">
+                <div class="container" id="detail-body">
+                    <!-- Aquí el JS insertará el contenido completo de la sección -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-inner">
+                <p>© 2025 Alianza por la Soberanía (APLS). Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="detalle.html?seccion=prensa-medios">Prensa</a>
+                    <a href="detalle.html?seccion=info-financiera">Transparencia</a>
+                    <a href="detalle.html?seccion=contacto">Contacto</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
