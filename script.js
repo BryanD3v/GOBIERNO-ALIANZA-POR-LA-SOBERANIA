@@ -486,7 +486,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     />
                                 </div>
                                 <div class="team-info">
-                                    <h3 class="team-name">Jean Luis Guzman F.</h3>
+                                    <h3 class="team-name">Jean Luis Guzman F. </h3>
                                     <p class="team-role">Presidente de la APLS</p>
                                 </div>
                             </article>
@@ -1627,5 +1627,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
 
 
