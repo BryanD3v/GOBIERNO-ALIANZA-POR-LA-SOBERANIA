@@ -481,7 +481,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 <div class="team-photo-wrapper">
                                     <img
                                         src="img/WhatsApp Image 2025-12-01 at 9.45.17 PM.jpeg"
-                                        alt="Jean Luis - Presidente de la APLS"
+                                        alt="Jean Luis Guzman F. - Presidente de la APLS"
                                         class="team-photo"
                                     />
                                 </div>
@@ -1627,4 +1627,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
 
