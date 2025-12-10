@@ -293,30 +293,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <hr class="section-divider" />
 
-                    <h3>Imágenes de referencia de programas</h3>
-                    <ul class="program-images-text">
-                        <li>
-                            <strong>Programa “Red Vial Digna RD”:</strong> carretera recién asfaltada, vecinos sonriendo y
-                            maquinaria retirándose al fondo.
-                        </li>
-                        <li>
-                            <strong>Programa “Clínicas Comunitarias 24/7”:</strong> clínica cercana atendiendo de día y de noche
-                            a los residentes de los barrios.
-                        </li>
-                        <li>
-                            <strong>Programa “Juventud Productiva RD”:</strong> jóvenes aprendiendo oficios técnicos y habilidades
-                            digitales en aulas modernas.
-                        </li>
-                        <li>
-                            <strong>Programa “Agua Limpia para Todos”:</strong> comunidades rurales recibiendo agua filtrada
-                            y segura.
-                        </li>
-                        <li>
-                            <strong>Programa “Barrio Seguro y Humano”:</strong> canchas iluminadas, lámparas nuevas y
-                            policías comunitarios integrados al vecindario.
-                        </li>
-                    </ul>
-
                     <div class="programs-footer-text">
                         <h4>Alianza por la Soberanía — APLS</h4>
                         <p>
@@ -1627,6 +1603,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
 
 
 
