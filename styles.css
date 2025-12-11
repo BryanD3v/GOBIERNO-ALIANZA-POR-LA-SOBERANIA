@@ -873,3 +873,320 @@ footer {
         padding-inline: 1.5rem;
     }
 }
+
+
+
+
+
+/* ===================== SECCIÓN MINISTERIOS ===================== */
+
+.ministerios-section {
+    padding: 6rem 0 5rem;
+    background: radial-gradient(circle at top left, rgba(59,130,246,0.10), transparent 60%),
+                radial-gradient(circle at bottom right, rgba(56,189,248,0.10), transparent 55%),
+                #f3f4f6;
+}
+
+.ministerios-section .container {
+    max-width: 1150px;
+}
+
+.ministerios-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.ministerios-header .pill-title {
+    display: inline-block;
+    padding: 0.35rem 1.1rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: rgba(37,99,235,0.08);
+    color: #1d4ed8;
+    margin-bottom: 0.85rem;
+}
+
+.ministerios-header h1 {
+    font-size: 2.1rem;
+    margin-bottom: 0.75rem;
+    color: #0f172a;
+}
+
+.ministerios-lead {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #4b5563;
+}
+
+/* Dirección política */
+
+.ministerios-liderazgo {
+    background: #ffffff;
+    border-radius: 1.6rem;
+    padding: 2rem 2.25rem;
+    box-shadow: 0 22px 55px rgba(15,23,42,0.10);
+    margin-bottom: 3rem;
+}
+
+.ministerios-liderazgo-top h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.35rem;
+    color: #0f172a;
+}
+
+.ministerios-liderazgo-top p {
+    color: #4b5563;
+    max-width: 720px;
+}
+
+.ministerios-liderazgo-grid {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 1.5rem;
+}
+
+.leader-card {
+    background: radial-gradient(circle at top left, rgba(37,99,235,0.12), transparent 65%),
+                #f9fafb;
+    border-radius: 1.4rem;
+    padding: 1.2rem 1.1rem 1.4rem;
+    text-align: center;
+    box-shadow: 0 16px 40px rgba(15,23,42,0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 55px rgba(15,23,42,0.22);
+}
+
+.leader-avatar {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 0.65rem;
+    border-radius: 999px;
+    padding: 3px;
+    background: conic-gradient(from 180deg at 50% 50%, #2563eb, #22c55e, #818cf8, #2563eb);
+}
+
+.leader-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    display: block;
+    background: #0f172a;
+}
+
+.leader-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.15rem;
+    color: #0f172a;
+}
+
+.leader-role {
+    font-size: 0.82rem;
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.leader-text {
+    font-size: 0.85rem;
+    color: #4b5563;
+}
+
+/* GRID DE MINISTERIOS */
+
+.ministerios-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.ministry-card {
+    display: grid;
+    grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: flex-start;
+    background: #ffffff;
+    border-radius: 1.8rem;
+    padding: 2rem 2.1rem;
+    box-shadow: 0 22px 55px rgba(15,23,42,0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    border: 1px solid rgba(148,163,184,0.15);
+}
+
+.ministry-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 65px rgba(15,23,42,0.22);
+    border-color: rgba(59,130,246,0.45);
+}
+
+/* Imagen del ministerio */
+
+.ministry-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.4rem;
+}
+
+.ministry-image img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    display: block;
+    transform: scale(1);
+    transition: transform 0.35s ease;
+}
+
+.ministry-card:hover .ministry-image img {
+    transform: scale(1.04);
+}
+
+/* Placeholder opcional para futuros ministerios sin foto */
+
+.ministry-image.placeholder {
+    background: radial-gradient(circle at top left, #2563eb, #1d4ed8);
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 18px 40px rgba(37,99,235,0.50);
+}
+
+.ministry-image.placeholder span {
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1.2rem;
+    color: #e5e7eb;
+}
+
+.ministry-image.placeholder::before {
+    content: "";
+    position: absolute;
+    inset: 18%;
+    border-radius: inherit;
+    background: radial-gradient(circle at center, rgba(15,23,42,0.08), transparent 65%);
+    z-index: 1;
+}
+
+.ministry-image.placeholder::after {
+    content: "🏛️";
+    position: absolute;
+    z-index: 0;
+    font-size: 3.4rem;
+    opacity: 0.35;
+}
+
+/* Texto de ministerios */
+
+.ministry-text h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+}
+
+.ministry-summary {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 1.3rem;
+}
+
+/* Columnas problemas / soluciones */
+
+.ministry-columns {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1.6rem;
+    margin-bottom: 1.25rem;
+}
+
+.ministry-columns h3 {
+    font-size: 0.96rem;
+    margin-bottom: 0.4rem;
+    color: #111827;
+}
+
+/* Listas */
+
+.ministry-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.ministry-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.35rem;
+}
+
+.ministry-list li::before {
+    content: "";
+    position: absolute;
+    left: 0.25rem;
+    top: 0.45rem;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #2563eb, #22c55e);
+}
+
+/* Metas */
+
+.ministry-meta h3 {
+    font-size: 0.96rem;
+    margin-bottom: 0.3rem;
+    color: #111827;
+}
+
+.ministry-list.inline li {
+    margin-bottom: 0.5rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 960px) {
+    .ministry-card {
+        grid-template-columns: 1fr;
+        padding: 1.6rem 1.4rem;
+    }
+
+    .ministry-image {
+        order: -1;
+    }
+
+    .ministerios-liderazgo {
+        padding: 1.6rem 1.4rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .ministerios-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .ministry-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .leader-card {
+        padding: 1rem;
+    }
+
+    .ministerios-section {
+        padding-top: 4.5rem;
+    }
+}
+
